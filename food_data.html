@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Food Data</title>
+    <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/food_data.css" />
+  </head>
+  <body>
+    <!--start of navbar-->>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">About</a></li>
+        <li><a href="meal_entries.html">Meal Entry</a></li>
+        <li><a href="food_data.html">Food Data</a></li>
+        <li><a href="recipes.html">Recipe</a></li>
+        <li><a href="workout_planner.html">Workout Planner</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar -->
+    <h1>Enter Food Data</h1>
+    <p>Enter food name, as well its information</p>
+    <!-- start of food form-->
+    <form id="food-entry">
+      <fieldset>
+        <label for="food-name"
+          >Food Name:
+          <input id="food-name" name="food-name" type="text" required
+        /></label>
+        <label for="serving-type"
+          >Serving Type:
+          <select id="serving-type" name="serving-type">
+            <option value="1" selected>(select one)</option>
+            <option value="2">Grams</option>
+            <option value="3">Tablespoon</option>
+            <option value="4">Teaspoon</option>
+            <option value="5">Piece</option>
+          </select>
+        </label>
+        <label for="serving-size"
+          >Serving Size:
+          <input id="serving-size" name="serving-size" type="number" required />
+        </label>
+        <label for="calories"
+          >Calories:
+          <input id="calories" name="calories" type="number" required />
+        </label>
+        <label for="protein"
+          >Protein:
+          <input id="protein" name="protein" type="number" required />
+        </label>
+        <label for="fat"
+          >Fat:
+          <input id="fat" name="fat" type="number" required />
+        </label>
+        <label for="Carbohydrate"
+          >Carbohydrate:
+          <input id="Carbohydrate" name="Carbohydrate" type="number" required />
+        </label>
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <script src="food_data.js"></script>
+  </body>
+</html>

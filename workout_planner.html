@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Planner</title>
+    <link rel="stylesheet" href="public/css/workout_planner.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">About</a></li>
+        <li><a href="meal_entries.html">Meal Entry</a></li>
+        <li><a href="food_data.html">Food Data</a></li>
+        <li><a href="recipes.html">Recipe</a></li>
+        <li>
+          <a href="workout-planner/workout_planner.html">Workout Planner</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Workout Planner</h1>
+    <div class="parent-div">
+      <div class="workout-div">
+        <div class="controls">
+          <label for="workout-dropdown"></label>
+          <select id="workout-dropdown">
+            <option value="Chest">Chest</option>
+            <option value="Back">Back</option>
+            <option value="Legs">Legs</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Biceps">Biceps</option>
+            <option value="Triceps">Triceps</option>
+          </select>
+          <button type="button" id="add-category">Add a category</button>
+          <button type="button" id="get-total">Get Total Sets & Reps</button>
+        </div>
+        <div class="workout-entry-container-main"></div>
+      </div>
+      <div id="workout-list-div">
+        <label> MUSCLE PART WORKED OUT: </label>
+        <ul id="targeted-muscle"></ul>
+        <br />
+      </div>
+    </div>
+    <script src="workout_planner_view.js"></script>
+    <script src="workout_planner_controller.js"></script>
+  </body>
+</html>
