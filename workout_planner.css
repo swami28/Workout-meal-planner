@@ -1,0 +1,133 @@
+button {
+  background-color: #344e41;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #04aa6d; /* Green */
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #344e41;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+.controls {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.parent-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#workout-list-div {
+  background-color: antiquewhite;
+  margin-left: auto;
+  padding: 20px;
+}
+.workout-container {
+  display: flex;
+}
+
+.sets-container {
+  align-content: center;
+  margin-left: 50px;
+}
+.reps-container {
+  align-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#Chest fieldset,
+#Back fieldset,
+#Legs fieldset,
+#Shoulders fieldset,
+#Biceps fieldset,
+#Triceps fieldset {
+  display: flex;
+}
+
+.name-container {
+  width: 300px;
+}
+#Chest legend,
+#Back legend,
+#Legs legend,
+#Shoulders legend,
+#Biceps legend,
+#Triceps legend {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#Chest fieldset button,
+#Back fieldset button,
+#Legs fieldset button,
+#Shoulders fieldset button,
+#Biceps fieldset button,
+#Triceps fieldset button {
+  height: 25px;
+  width: 25px;
+  font-size: 16px;
+  margin: auto 0;
+  background-color: #344e41;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+  transition-duration: 0.4;
+}
+
+#Chest fieldset button:hover,
+#Back fieldset button:hover,
+#Legs fieldset button:hover,
+#Shoulders fieldset button:hover,
+#Biceps fieldset button:hover,
+#Triceps fieldset button:hover {
+  background-color: #04aa6d; /* Green */
+  color: white;
+}
+
+body {
+  background-color: #a3b18a;
+  font-family: Helvetica;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.workout-div {
+  background-color: #dad7cd;
+}
